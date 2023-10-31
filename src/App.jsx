@@ -21,11 +21,11 @@ function App() {
 
   const getExercises = async () => {
     // ------------- prod
-/*     await axios.get('https://sheetdb.io/api/v1/bo5hm6fbpujji')
-    .then(resp => setData(resp.data)) */
+    await axios.get('https://sheetdb.io/api/v1/bo5hm6fbpujji')
+    .then(resp => setData(resp.data))
 
     // ------------- dev
-    setData(db)
+/*     setData(db) */
 
     defineType(0)
   }
