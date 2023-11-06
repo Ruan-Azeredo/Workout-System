@@ -14,7 +14,7 @@ function App() {
 
   const [exe, setExe] = useState()
   
-  const defineType = (n) => {
+  const defineType = (n, data) => {
     setExe(treatedExercises(data, infos)[n])
     setType(n)
   }
@@ -22,12 +22,14 @@ function App() {
   const getExercises = async () => {
     // ------------- prod
     await axios.get('https://sheetdb.io/api/v1/bo5hm6fbpujji')
-    .then(resp => setData(resp.data))
+    .then(resp => {
+      setData(resp.data)
+      defineType(0, resp.data)
+    })
 
     // ------------- dev
-/*     setData(db) */
-
-    defineType(0)
+/*     setData(db)
+    defineType(0, db) */
   }
 
   return (
@@ -61,7 +63,7 @@ function App() {
             )}
           </div>
           <div className="border-2 border-secondary rounded-lg p-5 w-80">
-            <FeedbackForm exercises={exe} pts={data?.pts ? data.pts : 0} type={type}/>
+            <FeedbackForm exercises={exe} pts={data?.length > 0 ? data?.[data.length - 1]?.pts : 0} type={type}/>
           </div>
         </div>
       </div>
