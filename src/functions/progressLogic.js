@@ -95,13 +95,13 @@ import { infos } from "../service/exercisesInfos"
         const day0_exercises = []
         const day1_exercises = []
         const day2_exercises = []
-        trasnformDayInArray(type_0[type_0.length -1], 0).exercises.map(item => {
+        trasnformDayInArray(type_0?.[type_0?.length -1], 0).exercises.map(item => {
             day0_exercises.push(coef(item))
         })
-        trasnformDayInArray(type_1[type_1.length -1], 1).exercises.map(item => {
+        trasnformDayInArray(type_1?.[type_1?.length -1], 1).exercises.map(item => {
             day1_exercises.push(coef(item))
         })
-        trasnformDayInArray(type_2[type_2.length -1], 2).exercises.map(item => {
+        trasnformDayInArray(type_2?.[type_2?.length -1], 2).exercises.map(item => {
             day2_exercises.push(coef(item))
         })
         return [day0_exercises, day1_exercises, day2_exercises]
