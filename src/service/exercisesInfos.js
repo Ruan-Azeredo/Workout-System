@@ -70,5 +70,41 @@ export const infos = [
         name: 'Abdominal Supra',
         description: 'Apoie as duas mãos na cabeça, mantenha as pernas abertas e com as respectivas solas dos pés em contato com solo. Faça a elevação dos ombros do chão, fazendo a contração do abdômen; evitem puxar a cabeça; a mão na cabeça deve servir somente de apoio para a mesma.',
         img: 'https://s2-ge.glbimg.com/P6A7cYQImMWwWvZdsrwKgRHz1n0=/0x0:1600x1060/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/T/l/b6BR5oQ1aPKkkG5TLCBQ/whatsapp-image-2018-09-11-at-19.29.48.jpeg'
+    },
+    {
+        id: 12,
+        name: 'Triceps no Banco',
+        description: 'Manter o corpo reto e evitar o relaxamento excessivo do quadril, também é importante manter os cotovelos imóveis durante o exercício e evitar que eles se abram para os lados.',
+        img: 'https://www.mundoboaforma.com.br/wp-content/uploads/2021/03/triceps-no-banco.gif'
+    },
+    {
+        id: 13,
+        name: 'Flexão de braço inclinada',
+        description: 'Lembre-se de contrair o abdômen, flexionar os cotovelos até que o peito encoste na superfície e retornar à posição inicial.',
+        img: 'https://static.tuasaude.com/media/article/hr/ab/treino-de-biceps-em-casa_52300_l.webp'
+    },
+    {
+        id: 14,
+        name: 'Rosca direta',
+        description: 'Utilize a mochila com um peso de 2 kg dentro e realize repetições elevando o peso da forma como é mostrado na imagem, tente levar o punho até proximo do peito. Faça 10 repetições com um braço, depois 10 com o outro para contar uma serie.',
+        img: 'https://img.freepik.com/fotos-premium/mulher-atletica-forte-fazendo-uma-rosca-biceps-com-pesos-de-halteres-para-exercitar-os-musculos-do-braco-durante-sua-rotina-de-exercicios-em-casa_662251-1408.jpg'
+    },
+    {
+        id: 15,
+        name: 'Elevação Lateral',
+        description: 'Utilize a mochila com um peso de 2 kg dentro e realize repetições elevando o peso da forma como é mostrado na imagem, fazendo um lado de cada vez, lembre-se de que o foco do exercicio é no cotovelo, que deve chegar a altura do ombro. Faça 10 repetições com um braço, depois 10 com o outro para contar uma serie.',
+        img: 'https://www.webrun.com.br/wp-content/uploads/2016/08/superiores-capa.png'
+    },
+    {
+        id: 16,
+        name: 'Barra',
+        description: '',
+        img: 'https://static1.minhavida.com.br/articles/20/cc/93/47/pullup-barra-mulher-orig-1.jpg'
+    },
+    {
+        id: 16,
+        name: 'Remada',
+        description: 'Puxe o a mochila com o peso de 2 kg dentro, tal qual a imagem mostra, faça 10 repetições de um lado e depois 10 do outro para contar uma serie.',
+        img: 'https://blog.cajubrasil.com.br/wp-content/uploads/2021/09/mulher-fazendo-exercicio-para-as-costas-1200x840.jpg'
     }
 ]
