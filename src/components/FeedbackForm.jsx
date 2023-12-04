@@ -70,7 +70,7 @@ const FeedbackForm = ({exercises, pts, type}) => {
                 {id: 17, dificultly: 3}
             ])
         }
-    }, [])
+    }, [type])
 
     const submit = () => {
 
