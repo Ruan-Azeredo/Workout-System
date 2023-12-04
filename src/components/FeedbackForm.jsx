@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ModalPitaSucess from './ModalPitaSucess'
 
 const InputDificultly = ({name, id, set, values}) => {
@@ -50,6 +50,28 @@ const FeedbackForm = ({exercises, pts, type}) => {
     const [open, setOpen] = useState(false)
     const [disable, setDisable] = useState(false)
 
+    useEffect(() => {
+        if(type == 1){
+            setEx([
+                {id: 6, dificultly: 3},
+                {id: 7, dificultly: 3},
+                {id: 8, dificultly: 3},
+                {id: 9, dificultly: 3},
+                {id: 10, dificultly: 3},
+                {id: 11, dificultly: 3}
+            ])
+        } else if(type == 2){
+            setEx([
+                {id: 12, dificultly: 3},
+                {id: 13, dificultly: 3},
+                {id: 14, dificultly: 3},
+                {id: 15, dificultly: 3},
+                {id: 16, dificultly: 3},
+                {id: 17, dificultly: 3}
+            ])
+        }
+    }, [])
+
     const submit = () => {
 
         const data = [
@@ -95,6 +117,7 @@ const FeedbackForm = ({exercises, pts, type}) => {
                 dif_ex6: ex[5].dificultly,
             }
         ]
+        // ------------- prod
         axios.post('https://sheetdb.io/api/v1/bo5hm6fbpujji', {
             data: data
         }).then(resp => {
@@ -104,8 +127,11 @@ const FeedbackForm = ({exercises, pts, type}) => {
             console.error(error)
             setDisable(true)
         })
-        console.log(data)
 
+        // ------------ dev
+/*         setDisable(true)
+        console.log(data)
+ */
         setOpen(!open)
     }
 
