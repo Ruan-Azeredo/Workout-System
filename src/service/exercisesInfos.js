@@ -102,7 +102,7 @@ export const infos = [
         img: 'https://static1.minhavida.com.br/articles/20/cc/93/47/pullup-barra-mulher-orig-1.jpg'
     },
     {
-        id: 16,
+        id: 17,
         name: 'Remada',
         description: 'Puxe o a mochila com o peso de 2 kg dentro, tal qual a imagem mostra, faça 10 repetições de um lado e depois 10 do outro para contar uma serie.',
         img: 'https://blog.cajubrasil.com.br/wp-content/uploads/2021/09/mulher-fazendo-exercicio-para-as-costas-1200x840.jpg'
