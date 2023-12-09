@@ -38,9 +38,9 @@ function App() {
         <div className="text-2xl text-secondary flex">Mary Workout</div>
         <div className="flex gap-10">
           <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box">
-            <li><a onClick={() => defineType(0)}>Perna</a></li>
-            <li><a onClick={() => defineType(1)}>Abdomen</a></li>
-            <li><a onClick={() => defineType(2)}>Braço</a></li>
+            <li><a onClick={() => defineType(0, data)}>Perna</a></li>
+            <li><a onClick={() => defineType(1, data)}>Abdomen</a></li>
+            <li><a onClick={() => defineType(2, data)}>Braço</a></li>
           </ul>
           <div className="w-14 h-14 p-1 bg-warning rounded-full">
             <img src="/mary.jpeg" alt="" className="rounded-full w-12 h-12 object-cover"/>
